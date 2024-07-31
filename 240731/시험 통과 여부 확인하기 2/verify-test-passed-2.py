@@ -1,24 +1,18 @@
-cnt = int(input())
-arr_1 = list(map(int, input().split()))
-arr_2 = list(map(int, input().split()))
-arr_3 = list(map(int, input().split()))
+n = int(input()) #학생수
 
-avg_1 = 0
-avg_2 = 0
-avg_3 = 0
+p = 0 # 통과한사람수
 
-avg_1 = sum(arr_1)/4
-avg_2 = sum(arr_2)/4
-avg_3 = sum(arr_3)/4
+for _ in range(n):
+    arr = list(map(int, input().split()))
 
-list_val = [avg_1, avg_2, avg_3]
-cnt_val = 0
+    sum_val = sum(arr)
 
-for i in list_val:
-    if i >= 60:
+    avg = sum_val/4
+
+    if avg >= 60:
         print('pass')
-        cnt_val += 1
+        p += 1
     else:
         print('fail')
 
-print(cnt_val)
+print(p)
