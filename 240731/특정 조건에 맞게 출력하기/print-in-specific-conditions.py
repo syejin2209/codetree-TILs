@@ -10,5 +10,6 @@ for i in arr:
         new.append(b)
     if i == 0:
         new.pop()
+        break
 
 print(*new)
