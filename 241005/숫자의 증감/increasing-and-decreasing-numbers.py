@@ -8,6 +8,7 @@ if c == 'A':
         print(i, end=' ')
         i += 1
 else:
-    for i in range(n, 0):
+    i = n
+    while i >= 1:
         print(i, end=' ')
         i -= 1
