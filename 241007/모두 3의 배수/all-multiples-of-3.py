@@ -3,7 +3,7 @@ n = int(input())
 satisfied = False
 
 for i in range(n):
-    if n % 3 == 0:
+    if i % 3 == 0:
         satisfied = True
 
 if satisfied == True:
