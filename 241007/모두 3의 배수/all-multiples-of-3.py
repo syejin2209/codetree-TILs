@@ -2,8 +2,8 @@ n = int(input())
 
 satisfied = False
 
-for i in range(n):
-    if i % 3 == 0:
+for i in range(5):
+    if n % 3 == 0:
         satisfied = True
 
 if satisfied == True:
